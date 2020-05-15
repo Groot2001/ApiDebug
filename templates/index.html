@@ -1,0 +1,11 @@
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+    {{ wtf.quick_form(form) }}
+    {% if sent %}
+        <p>已发送</p>
+    {% else %}
+        <p>请输入参数</p>
+    {% endif %}
+
+{% endblock content %}
